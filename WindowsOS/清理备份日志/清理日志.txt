@@ -1,0 +1,45 @@
+2022/11/19 清理鸿蒙有关的所有文件
+
+
+预备清理：重装系统并：
+重新攥写文件夹，管理C盘文件
+
+目前D盘如下：
+Game
+SoftWare
+tmp
+
+更改后的D盘：
+如SDK集成开发环境（编译需要经常调用C盘文件）
+和相关库文件（因为和系统盘在一个物理磁盘，）
+软件
+
+E/F盘存放
+游戏
+代码
+多媒体文件，文档等等
+
+
+需要特别注意的（很占用空间的）：Adobe的软件（存放在很多位置）
+
+目前E盘分类：
+Code_C
+code_former
+code_IOT
+code_Python
+code_server
+HarmonyOSdemo
+OpenHarmony
+Program files
+Project
+tmp_Files
+tmo_pics
+Tools
+
+
+建议U盘分类：
+1. code：可以分C,Python,others等其他目录
+2. Tools：开发环境
+3. SDK：相关库文件
+4. Project：与git有关的文件
+5. 学习、临时文件(tmp-..)，比赛，

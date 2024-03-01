@@ -1,0 +1,51 @@
+openharmony
+- 本地模拟器
+- devEcoStudio
+- VMware
+- Mobaxterm
+- hihope upgrade tools
+
+code_c
+- VS_tmp （注意vs保存文件不止一个,重新下的时候要去设置里选择路径）
+- 保存代码的文件(C，c++，新安等代码）
+
+tools
+> 工具包，保存除代码外的东西，注意不要更改路径
+- VS
+- IOT_ENV
+- former-tools
+- 8051 (?)
+- python
+- java
+- ...
+- nodejs
+- common
+- smartrf
+...
+
+tep_files
+> 临时文件保存
+- 四六级考试真题
+- 大疆
+ -u盘
+- 下载的文件和代码
+
+Git（git本地存储库）
+
+Code_IOT
+
+Code_python
+
+学习
+
+harmonyosdemo
+
+tmp
+
+visual studio
+
+project
+
+code_server
+
+code_former
