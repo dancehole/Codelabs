@@ -1,2 +1,0 @@
-python -m http.server 8000
-命令行运行
