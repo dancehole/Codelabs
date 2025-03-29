@@ -1,5 +1,5 @@
 ---
-comments: true  #默认不开启评论，此处开启
+comments: true
 ---
 
 
@@ -110,17 +110,58 @@ comments: true  #默认不开启评论，此处开启
 </div>
 dancehole.cn路由：
 
-| 项目名                 | 项目描述   | 项目链接                    |
-| ---------------------- | ---------- | --------------------------- |
-| danceholeLab（本项目） | 公共知识库 | https://docs.dancehole.cn   |
-| brief                  | 个人简历   | https://brief.dancehole.cn  |
-| intro                  | 项目列表   | https://intro.dancehole.cn  |
-|                        |            | https://yunnan.dancehole.cn |
-|                        |            | www.dancehole.cn            |
-|                        |            |                             |
-|                        |            |                             |
-|                        |            |                             |
+| 项目名               | 项目描述  | 项目链接                           |
+| ----------------- | ----- | ------------------------------ |
+| danceholeLab（本项目） | 公共知识库 | https://docs.dancehole.cn      |
+| brief             | 个人简历  | https://brief.dancehole.cn     |
+| intro             | 项目列表  | https://intro.dancehole.cn     |
+| 五子棋               | 全栈小游戏 | https://dancehole.cn/chess/    |
+| 小游戏合集             | 开源小游戏 | https://dancehole.cn/minigame/ |
+|                   |       |                                |
+|                   |       |                                |
+|                   |       |                                |
 
+github项目：
+
+| 项目名      | 项目描述 | 项目链接                                            | 部署链接 | 备注  |
+| -------- | ---- | ----------------------------------------------- | ---- | --- |
+| brief    |      | https://github.com/dancehole/brief              |      |     |
+| codelabs |      | https://github.com/dancehole/Codelabs           |      |     |
+|          |      | https://github.com/dancehole/workOA             |      |     |
+|          |      | https://github.com/dancehole/Home               |      |     |
+|          |      | https://github.com/dancehole/image              |      |     |
+|          |      | https://github.com/dancehole/LittleText         |      |     |
+|          |      | https://github.com/dancehole/TXMapDemo          |      |     |
+|          |      | https://github.com/dancehole/GreenFieldBackend  |      |     |
+|          |      | https://github.com/dancehole/vuepress           |      |     |
+|          |      | https://github.com/dancehole/introTemplate      |      |     |
+|          |      | https://github.com/dancehole/minigame           |      |     |
+|          |      | https://github.com/dancehole/dailyReportHandler |      |     |
+|          |      | https://github.com/dancehole/HTTP_SERVER        |      |     |
+
+gitee：
+
+| 项目名              | 项目描述 | 项目链接                                                          | 部署链接 | 备注  |
+| ---------------- | ---- | ------------------------------------------------------------- | ---- | --- |
+|                  |      | https://gitee.com/cyanbleeze/vue-chess                        |      |     |
+|                  |      | https://gitee.com/cyanbleeze/chess-server-go                  |      |     |
+|                  |      | https://gitee.com/dancehole/ark-ts-yue-sheng-shi              |      |     |
+|                  |      | https://gitee.com/dancehole/book-management                   |      |     |
+|                  |      | https://gitee.com/dancehole/code-labs                         |      |     |
+|                  |      | https://gitee.com/dancehole/auto-complete-cw                  |      |     |
+|                  |      | https://gitee.com/dancehole/AscentSys                         |      |     |
+|                  |      | https://gitee.com/dancehole/vue-chess                         |      |     |
+|                  |      | https://gitee.com/dancehole/notebooks                         |      |     |
+|                  |      | https://gitee.com/cyanbleeze/react-image-management           |      |     |
+|                  |      | https://gitee.com/dancehole/web-d                             |      |     |
+|                  |      | https://gitee.com/cyanbleeze/go-image-managemen               |      |     |
+|                  |      | https://gitee.com/dancehole/ar_app                            |      |     |
+|                  |      | https://gitee.com/dancehole/chess                             |      |     |
+|                  |      | https://gitee.com/dancehole/qrs                               |      |     |
+| Operating System |      | https://gitee.com/dancehole/tmp                               |      |     |
+|                  |      | https://gitee.com/dancehole/gdut-hetai-cup                    |      |     |
+|                  |      | https://gitee.com/sztu-gduedc-6/sztu-sports-monitoring-system |      |     |
+|                  |      | https://gitee.com/HagonChan/fsr-lab-for-harmony               |      |     |
 
 
 
@@ -139,10 +180,6 @@ dancehole.cn路由：
 | 项目              | Project  | 项目说明文档       |
 | 软件              | Software | 学习文档           |
 | 旅行 \| 生活      | Travel   | 旅行文档 \| 转飞书 |
-
-
-
-
 
 
 
@@ -167,7 +204,7 @@ dancehole.cn路由：
 
 ## 五、联系我们<a id = "title5"></a>
 
-网站：[dancehole 的主页](http://dancehole.cn)
+网站：[dancehole 的主页](http://brief.dancehole.cn)
 
 邮箱：1391755954@qq.com
 
