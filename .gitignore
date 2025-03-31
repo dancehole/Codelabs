@@ -4,7 +4,7 @@
 .hidd/
 
 # codelabs：屏蔽所有非build目录
-docs/*
+# docs/*
 
 
 ## Ignore Visual Studio temporary files, build results, and
