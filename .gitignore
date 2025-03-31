@@ -5,6 +5,7 @@
 
 # codelabs：屏蔽所有非build目录
 # docs/*
+site/*
 
 
 ## Ignore Visual Studio temporary files, build results, and
