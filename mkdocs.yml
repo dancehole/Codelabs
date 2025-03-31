@@ -53,18 +53,18 @@ copyright: Copyright © dancehole邓仕昊 2023 - 2024 深圳技术大学 ; <a h
 repo_url: https://github.com/dancehole/codeLabs
 repo_name: dancehole/CodeLabs
 
-# 显示文件时间 需要安装库 pip install mkdocs-git-revision-date-localized-plugin
+# 显示文件时间 需要安装库 pip install mkdocs-git-revision-date-localized-plugin,会显著减慢build的速度
 plugins:  # 插件
   - search
   - git-revision-date-localized:
-    type: timeago
-    custom_format: "%d %B %Y"
-    timezone: Europe/Amsterdam
-    locale: en
-    fallback_to_build_date: false
-    enable_creation_date: true
-    enabled: true
-    strict: true
+      type: timeago
+      custom_format: "%d %B %Y"
+      timezone: Europe/Amsterdam
+      locale: en
+      fallback_to_build_date: false
+      enable_creation_date: true
+      enabled: true
+      strict: true
 
 
 
