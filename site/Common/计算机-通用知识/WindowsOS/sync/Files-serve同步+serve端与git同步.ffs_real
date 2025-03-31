@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="REAL" XmlFormat="2">
+    <Directories>
+        <Item>D:\Files\3.Files</Item>
+    </Directories>
+    <Delay>10</Delay>
+    <Commandline>xcopy "D:\Files\Files\3.Files" "D:\Files\4.serve-mkdocs-shared\docs" /E /I /Y</Commandline>
+</FreeFileSync>

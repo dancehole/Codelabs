@@ -1,0 +1,26 @@
+
+{
+  "manifest_version": 3,
+  "name": "AutoCompleteBK",
+  "version": "1.1",
+  "description": "AutoCompleteBK for CanWay users",
+  "icons": {
+    "128": "img/dancehole1080x1080.jpg"
+  },
+  "permissions": [
+    "webNavigation",
+    "tabs"
+  ],
+  "background": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "*://paas.cwbk.com/login/*",
+        "*://erpnew.cwoa.net/*"
+      ],
+      "js": ["index.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}

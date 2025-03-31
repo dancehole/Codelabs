@@ -1,0 +1,99 @@
+site_name: danceholeLabs--"跳洞"的实验室
+
+theme: 
+  name: material  # 设置material for mkdocs主题
+  language: zh # 设定语言后支持搜索中文
+  logo: https://cdn.jsdelivr.net/gh/dancehole/image@main/img/favicon.ico # logo路径，删除可以使用默认logo
+
+  # [调色板]明暗主题；注释掉可以显著提升性能,https://wdk-docs.github.io/mkdocs-material-docs/setup/changing-the-colors/
+  palette:
+    # primary: blue grey
+    - scheme: default # 日间模式
+      primary: indigo # 主要颜色,default:indigo
+      accent: indigo # 链接等可交互元件的高亮色,default:indigo
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - scheme: slate # 夜间模式
+      primary: black 
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
+
+  features:
+    - navigation.instant  # 采用即使加载，优化访问性能
+    - navigation.instant.prefetch # 即时抓取，优化访问性能
+    - navigation.tabs # 上方导航栏,收纳第一级目录
+    - navigation.tabs.sticky #粘性导航选项卡
+    # - navigation.sections  # 启用后，顶级分区将会分组（即在侧边栏展开额外一级目录，建议在目录层级较多、但总文件量少的情况下、希望快速访问时采用。优先级：上方导航栏->侧边栏->箭头递归目录[ps:由于样式设计不建议箭头目录太多嵌套]）
+    - navigation.tracking
+    - navigation.footer # 页脚 指向下一篇文章
+    - navigation.top  # 新增导航到顶部的按钮
+    # - navigation.expand # 默认展开所有小节
+    # - navigation.prune  # 优化性能（仅渲染每个分类的第一页，默认打开首页，需要高维护成本，需要付费）
+    - toc.follow  # 锚点跟随，目录跟随页面
+    - search.suggest  # 搜索建议(仅支持英文)
+    - search.highlight  # 搜索内容高亮显示（仅支持英文）
+
+  custom_dir: overrides # 扩展主题，支持评论技术栈
+
+
+extra:  # 底部图标 版权跳转
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dancehole
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<1391755954@qq.com>
+
+# 版权声明 
+copyright: Copyright © dancehole邓仕昊 2023 - 2024 深圳技术大学 ; <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024302719号</a>
+
+# 存储库
+repo_url: https://github.com/dancehole/codeLabs
+repo_name: dancehole/CodeLabs
+
+# 显示文件时间 需要安装库 pip install mkdocs-git-revision-date-localized-plugin
+plugins:  # 插件
+  - search
+
+markdown_extensions:
+  - admonition  # 提示块
+  - footnotes  # 脚注
+  - meta  # 定义元数据，通过文章上下文控制，如disqus
+  - pymdownx.caret  # 下划线上标
+  - pymdownx.tilde  # 删除线下标
+  - pymdownx.critic  # 增加删除修改高亮注释，可修饰行内或段落
+  - pymdownx.details  # 提示块可折叠
+  - pymdownx.inlinehilite  # 行内代码高亮
+  - pymdownx.mark  # 文本高亮
+  - pymdownx.smartsymbols  # 符号转换
+  - pymdownx.superfences  # 代码嵌套在列表里
+  - pymdownx.highlight: # 代码高亮
+      anchor_linenums: true # 代码快速复制和链接
+      linenums: true # 行号
+  - codehilite:    # 代码高亮，显示行号
+      guess_lang: false
+      linenums: true
+  - toc:  # 锚点
+      permalink: true
+  - pymdownx.arithmatex:  # 数学公式
+      generic: true
+  - pymdownx.betterem:  # 对加粗和斜体更好的检测
+  - pymdownx.emoji:  # 表情
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.magiclink  # 自动识别超链接
+  - pymdownx.tasklist:  # 复选框checklist
+      custom_checkbox: true
+  - def_list
+
+
+
+extra_javascript:
+# - javascripts/extra.js
+# math数学库支持（下面三）
+- javascripts/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+# extra_css:
+#   - stylesheets/extra.css
