@@ -34,7 +34,7 @@
 7. 注意：token一般不设置为永久，我们可以第一次30天-然后180天这样子，**到期时会自动销毁没有“续费”**
 8. 配置Picgo
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-picgo-1.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-picgo-1.png"/>
 
 - 仓库名：格式为`用户名/仓库`
 - 分支名：main/master（以实际为准 建议单分支即可）
@@ -46,7 +46,7 @@
 
 这里列举三种，vscode、typora、Obsidian
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-picgo-2.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-picgo-2.png"/>
 
 ## picgo插件
 
@@ -107,3 +107,28 @@ picgo需要配合其他软件和服务商一起使用
 github：  
 
 [github.com/fslongjin/My](http://link.zhihu.com/?target=https%3A//github.com/fslongjin/My-Easy-Pic-Bed)
+
+
+
+
+
+## 使用jsdelivr picgo 图床加速
+
+> 原始链接：https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-markdown-alpha.png
+>
+> cdn加速后：https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-markdown-alpha.png
+
+不开梯子（国内裸连访）访问图片：
+
+- `找不到 raw.githubusercontent.com 的服务器 IP 地址`（大概率是dns解析问题）
+- 如果是cdn加速，可能很慢但是能够加载出来
+
+
+
+**picGo设置：**
+
+- github设置-自定义域名-设置为`https://cdn.jsdelivr.net/gh/dancehole/image@main/`
+
+**文章里已经存在的链接一键修改：**
+
+- 批量替换：把前缀`https://raw.githubusercontent.com/dancehole/image/main/`全部替换成`https://cdn.jsdelivr.net/gh/dancehole/image@main/`

@@ -87,7 +87,7 @@ $$
 
 希腊字母表
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-markdown-alpha.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-markdown-alpha.png"/>
 
 
 

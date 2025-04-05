@@ -3,7 +3,7 @@ site_name: danceholeLabs--"跳洞"的实验室
 theme: 
   name: material  # 设置material for mkdocs主题
   language: zh # 设定语言后支持搜索中文
-  logo: https://raw.githubusercontent.com/dancehole/image/main/common/favicon.ico # logo路径，删除可以使用默认logo
+  logo: https://cdn.jsdelivr.net/gh/dancehole/image@main/common/favicon.ico # logo路径，删除可以使用默认logo
 
   # [调色板]明暗主题；注释掉可以显著提升性能,https://wdk-docs.github.io/mkdocs-material-docs/setup/changing-the-colors/
   palette:

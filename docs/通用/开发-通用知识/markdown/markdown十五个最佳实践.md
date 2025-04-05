@@ -7,8 +7,8 @@
 
 举例：使用markdown标签的图片。假如图片是竖屏类的，很不好看
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-2024-aomen2"/>
-<img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-zhuhai-2"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-2024-aomen2"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2"/>
 
 
 方法1：使用表格约束
@@ -18,20 +18,20 @@
 
 | 这是第一张图片                                                                                          | 这是第二章图片                                                                                       |
 | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| <img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-2024-aomen2"/> | <img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-zhuhai-2"/> |
+| <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-2024-aomen2"/> | <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2"/> |
 
 方法二：单独控制每个图片的长宽高，和其他属性
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-2024-aomen2" height="100px"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-2024-aomen2" height="100px"/>
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-zhuhai-2" height="150px"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2" height="150px"/>
 
 一些常用的规范
 
 ```html
 // 可以添加的属性：其中标*表示常用
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-2024-aomen2"
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-2024-aomen2"
      href="跳转链接"
      alt="替代文本，假如图片无法渲染，可以有文字显示"
      width="长宽规定其中一个即可，保证比例"
@@ -44,7 +44,7 @@
      decoding="async">
 
 // 可以添加的样式
-<img 		       src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-2024-aomen2"
+<img 		       src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-2024-aomen2"
      style="width: 300px; height: auto；	// 长宽高 这里也可以定义
             max-width:300px; max-height:auto; // 最大尺寸
             object-fit:cover(充满容器 可能裁剪)
@@ -78,7 +78,7 @@
 </script>
 ```
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-zhuhai-2"
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2"
      style="max-width: 100%;
 			filter: grayscale(100%)blur(1px);
             max-height: 300px;
@@ -112,14 +112,14 @@ float
 
 
 
-<img id="test1" width="100px" src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-zhuhai-2" 
+<img id="test1" width="100px" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2" 
   onclick="document.getElementById('fullscreen-image').style.display='block';document.getElementById('test1').style.display='none';"
   style="cursor: zoom-in;"/>
 
 <!-- 隐藏的大图容器,点击后放大 -->
 
 <div id="fullscreen-image" style="display: none;">
-  <img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/travel-zhuhai-2" style="width: 100%;cursor: zoom-out;" onclick="document.getElementById('fullscreen-image').style.display='none';document.getElementById('test1').style.display='block'">
+  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2" style="width: 100%;cursor: zoom-out;" onclick="document.getElementById('fullscreen-image').style.display='none';document.getElementById('test1').style.display='block'">
 </div>
 
 

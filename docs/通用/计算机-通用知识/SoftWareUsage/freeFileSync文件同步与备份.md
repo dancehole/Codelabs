@@ -14,7 +14,7 @@
 
 ### 1. 软件界面介绍
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-freefilesync1.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-freefilesync1.png"/>
 
 1. 文件摘要区：可以看到主区域（左侧）的文件树，包括监视占用大小最多的文件/文件夹；占用最多的文件类型。可以通过此建立过滤器，排除不需要同步的文件。同时借助文件摘要区，可以对目录进行简单的清理与移动
 2. 比较区
@@ -62,13 +62,13 @@ CODE代码忽略
 
 我们另存为两种文件，一种为批处理作业
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-freefilesync2.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-freefilesync2.png"/>
 
 点击同步文件（下面），会打开软件界面并执行。比较完后可以查看文件异同，并**手动点击**同步
 
 点击批处理文件，会后台执行（可选择）完毕并同步（**自动同步完成，除非报错**）。批处理作业建议拆成多个，防止文件损坏
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-freefilesync3.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-freefilesync3.png"/>
 
 
 

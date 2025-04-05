@@ -72,7 +72,7 @@ $$ \begin{array}{c}
 
 希腊字母表
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-markdown-alpha.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-markdown-alpha.png"/>
 
 ### 3.代码高亮[¶](https://docs.dancehole.cn/Common/开发-通用知识/Markdown/[csdn]markdown最全语法/#3)
 

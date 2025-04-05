@@ -67,7 +67,7 @@ comments: true
     width: 100%;
     transform: scale(0.9);
     transition: transform 0.3s;">
-    <img src="https://raw.githubusercontent.com/dancehole/image/main/notebooks/icon-1080x1080.ico" 
+    <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/icon-1080x1080.ico" 
          alt="头像" 
          class="avatar" 
          style="
@@ -183,7 +183,7 @@ gitee：
 
 
 
-| <img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/web-games.png"/> | <img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/web-codeLabs.png"/> | <img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/web-chess.png"/> | <img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/Web_notebooks.png"/> | <img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/web_blogs.png"/> |
+| <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/web-games.png"/> | <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/web-codeLabs.png"/> | <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/web-chess.png"/> | <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/Web_notebooks.png"/> | <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/web_blogs.png"/> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <a href="https://dancehole.gitee.io/web-d/"><img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/img/th%20(2).jpg"/> |                                                              |                                                              |                                                              |                                                              |
 |                                                              |                                                              |                                                              |                                                              |                                                              |

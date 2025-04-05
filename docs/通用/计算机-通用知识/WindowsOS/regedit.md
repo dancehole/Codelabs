@@ -98,11 +98,11 @@ f【状态：未发布，待修改，命令和排版】
 2. 定位到`“HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID”`
 
 3. 右键点击“CLSID”键值，新建一个名为`{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}`的项
-   <img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-5.png"/>
+   <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-5.png"/>
 
 4. 右键点击新创建的项，新建一个名为`InprocServer32`的项，按下回车键保存
 
-   <img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-2.png"/>
+   <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-2.png"/>
 
 5. 重启或**重启**windows Explorer.exe进程（在任务管理器中，连同文件资源管理器、任务栏和开始菜单，请不要直接杀进程-会导致死机）
 
@@ -114,7 +114,7 @@ f【状态：未发布，待修改，命令和排版】
 
 原来右键->现在右键
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-11.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-11.png"/>
 
 
 
@@ -140,7 +140,7 @@ f【状态：未发布，待修改，命令和排版】
 
 
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-7.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-7.png"/>
 
 **同样是win10风格的文件资源管理器**
 
@@ -151,7 +151,7 @@ f【状态：未发布，待修改，命令和排版】
 1. 输入`reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /v "{e2bf9676-5f8f-435c-97eb-11607a5bedf7}" /t REG_SZ /d "" /f`
 2. 输入`reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /v "{e2bf9676-5f8f-435c-97eb-11607a5bedf7}" /t REG_SZ /d "" /f`
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-3.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-3.png"/>
 
 4. 恢复win11操作（删除注册表）：`reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /f`
 
@@ -168,9 +168,9 @@ f【状态：未发布，待修改，命令和排版】
 4. 新建字符串/S，命名为`{e2bf9676-5f8f-435c-97eb-11607a5bedf7}`。不用设置数据值。
 5. 重启电脑/文件资源管理器(windows explorer)
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-5.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-5.png"/>
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-4.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-4.png"/>
 
 
 
@@ -178,11 +178,11 @@ f【状态：未发布，待修改，命令和排版】
 
 原来：
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-16.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-16.png"/>
 
 现在：
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-6.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-6.png"/>
 
 **一个字，简洁！**
 
@@ -207,7 +207,7 @@ f【状态：未发布，待修改，命令和排版】
 计算机\HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\QQShellExt
 ```
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-9.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-9.png"/>
 
 如图所示定位到注册表三个项
 
@@ -249,13 +249,13 @@ Windows Registry Editor Version 5.00
 
 
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-8.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-8.png"/>
 
 
 
 我们可以指定新建一个模板文件（暂时支持纯文本文件，office模板需要额外设置）
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-15.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-15.png"/>
 
 **把ShellNew里的NullFile重命名为FileName，值为模板内容（可以使用模板文件路径）**
 
@@ -275,7 +275,7 @@ Windows Registry Editor Version 5.00
 
 我们新建一个项“dancehole”，可以看到右键就多了一个
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-13.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-13.png"/>
 
 
 
@@ -314,7 +314,7 @@ Windows Registry Editor Version 5.00
 
 默认属性里添加`D:\Tools\Typora\typora.exe" "%1`（改为自己的typora路径）
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-12.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-12.png"/>
 
 
 
@@ -404,7 +404,7 @@ Windows Registry Editor Version 5.00
 
 - [仓库地址：BluePointLilac/ContextMenuManager · GitHub](https://github.com/BluePointLilac/ContextMenuManager)
 
-<img src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-csdn-regedit-10.png"/>
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-csdn-regedit-10.png"/>
 
 
 
