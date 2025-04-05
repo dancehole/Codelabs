@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.10">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
@@ -92,7 +92,7 @@
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../../.." title="danceholeLabs--&#34;跳洞&#34;的实验室" class="md-header__button md-logo" aria-label="danceholeLabs--"跳洞"的实验室" data-md-component="logo">
       
-  <img src="https://raw.githubusercontent.com/dancehole/image/main/common/favicon.ico" alt="logo">
+  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/common/favicon.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -147,11 +147,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -185,6 +187,7 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
@@ -338,7 +341,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="danceholeLabs--&#34;跳洞&#34;的实验室" class="md-nav__button md-logo" aria-label="danceholeLabs--"跳洞"的实验室" data-md-component="logo">
       
-  <img src="https://raw.githubusercontent.com/dancehole/image/main/common/favicon.ico" alt="logo">
+  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/common/favicon.ico" alt="logo">
 
     </a>
     danceholeLabs--"跳洞"的实验室
@@ -4295,7 +4298,7 @@
 <p>电磁式蜂鸣器：在接通电源后，振动膜片周期性的振动发声。需要注意的一点是，发声是在内部有电流产生磁场，使得膜片振动的一瞬间。 如果内部一直是直流电的话我们只能听到很小的一下的声音，如果需要持续的声音（就像我萌以前过生日的那种唱生日快乐歌的小玩意）应该怎么办呢？<strong>需要一个交流的驱动电路就行。最简单的方波就可以驱动。</strong> 这里我们使用的是无源蜂鸣器， 这里的源指的是振荡源，自带BUFF的就是有源，也就是直接同直流电就可以发声，无源则需要外部送入方波信号用于驱动才行。</p>
 <p>其他分类可以参考<a href="https://blog.csdn.net/weixin_42645653/article/details/111991949">csdn的这篇文章</a></p>
 <h1 id="_2">有源蜂鸣器<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
-<p><img alt="" src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/hardware-arduino-bee-3.png" /></p>
+<p><img alt="" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/hardware-arduino-bee-3.png" /></p>
 <ol>
 <li>
 <p>介绍：相信大家对蜂鸣器都不会陌生，我们在很多场景下都会用到蜂鸣器，大部分都是使用蜂鸣器来做提示或报警，比如按键按下、开始工作、工作结束或是故障等等。这里对单片机在蜂鸣器驱动上的应用作一下描述。</p>
@@ -4310,7 +4313,7 @@
 </li>
 <li>
 <p>利用 I/O 定时翻转电平来产生驱动波形的方式会比较麻烦一点，必须利用定时器来做定时，通过定时翻转电平产生符合蜂鸣器要求的频率的波形，这个波形就可以用来驱动蜂鸣器了。比如为 2500Hz 的蜂鸣器的驱动，可以知道周期为 400μs，这样只需要驱动蜂鸣器的 I/O 口每 200μs 翻转一次电平就可以产生一个频率为2500Hz，占空比为 &frac12;duty 的方波，再通过三极管放大就可以驱动这个蜂鸣器了。
-     <img alt="" src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/hardware-arduino-bee-5.png" /></p>
+     <img alt="" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/hardware-arduino-bee-5.png" /></p>
 </li>
 </ol>
 <p>三、模块使用</p>
@@ -4340,7 +4343,7 @@
 </tbody>
 </table>
 <p>如图：
-<img alt="" src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/hardware-arduino-bee-4.png" /></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/hardware-arduino-bee-4.png" /></p>
 <p>下面的这个测试代码是一个关于使用模拟量控制蜂鸣器显示频率的程序：
 程序说明：第 10 引脚为控制蜂鸣器的引脚。
 第 3 引脚为模拟量引脚，所使用的可调电阻为 10K。
@@ -4626,7 +4629,7 @@
 </code></pre></div></td></tr></table></div>
 <h1 id="_3">无源蜂鸣器<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
 <p>样子长这样：
-<img alt="" src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/hardware-arduino-bee-2.png" /></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/hardware-arduino-bee-2.png" /></p>
 <p>用 Arduino 可以完成的互动作品有很多，最常见也最常用的就是声光展示了，前面一直都是在用 LED 小灯在做实验，本个实验就让大家的电路发出声音，能够发出声音的最常见的元器件就是蜂鸣器和喇叭了，两者相比较蜂鸣器更简单和易用所以我们本实验采用蜂鸣器。</p>
 <p>蜂鸣器及其原理
 （一）蜂鸣器的介绍
@@ -4735,7 +4738,7 @@
 <p>返回值
 - 无</p>
 <p>蜂鸣器对应音符 
-<img alt="" src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/hardware-arduino-bee-1.png" /></p>
+<img alt="" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/hardware-arduino-bee-1.png" /></p>
 <p>发声可以参考<a href="https://blog.csdn.net/I_AM_JOKER/article/details/104223593">天空之城</a></p>
 <p>使用tone()样例：发声</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
@@ -4964,7 +4967,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 31, 2025 14:11:07"><span class="timeago" datetime="2025-03-31T14:11:07+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 31, 2025 14:11:07">2025-03-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 5, 2025 04:46:23"><span class="timeago" datetime="2025-04-05T04:46:23+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 5, 2025 04:46:23">2025-04-05</span>
   </span>
 
     
@@ -4974,7 +4977,7 @@
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 31, 2025 14:11:07"><span class="timeago" datetime="2025-03-31T14:11:07+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 31, 2025 14:11:07">2025-03-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 5, 2025 04:46:23"><span class="timeago" datetime="2025-04-05T04:46:23+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 5, 2025 04:46:23">2025-04-05</span>
   </span>
 
     

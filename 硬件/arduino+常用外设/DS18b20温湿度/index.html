@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.10">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
@@ -92,7 +92,7 @@
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../../.." title="danceholeLabs--&#34;跳洞&#34;的实验室" class="md-header__button md-logo" aria-label="danceholeLabs--"跳洞"的实验室" data-md-component="logo">
       
-  <img src="https://raw.githubusercontent.com/dancehole/image/main/common/favicon.ico" alt="logo">
+  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/common/favicon.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -147,11 +147,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -185,6 +187,7 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
@@ -338,7 +341,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="danceholeLabs--&#34;跳洞&#34;的实验室" class="md-nav__button md-logo" aria-label="danceholeLabs--"跳洞"的实验室" data-md-component="logo">
       
-  <img src="https://raw.githubusercontent.com/dancehole/image/main/common/favicon.ico" alt="logo">
+  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/common/favicon.ico" alt="logo">
 
     </a>
     danceholeLabs--"跳洞"的实验室
@@ -4286,7 +4289,7 @@
 Arduino示例代码：
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="o">!</span><span class="p">[</span><span class="n">DS18B20_print</span><span class="p">](</span><span class="n">imgs</span><span class="o">/</span><span class="n">DS18B20_print</span><span class="p">.</span><span class="n">png</span><span class="p">)</span><span class="n">xxxxxxxxxx98</span><span class="w"> </span><span class="mi">1</span><span class="err">#</span><span class="n">define</span><span class="w"> </span><span class="n">dht_dpin</span><span class="w"> </span><span class="n">A0</span><span class="w">   </span><span class="c1">// 设定A0为模拟输入接口(a0-a5)2byte bGlobalErr;3byte dht_dat[5];45void setup(){6InitDHT();7Serial.begin(9600);8delay(300);9Serial.println(&quot;Humidity and temperature\n\n&quot;);10delay(700);11}1213void loop(){14  ReadDHT();15  switch (bGlobalErr){      //获取数据后，开始打印16     case 0:17 Serial.print(&quot;Current humdity = &quot;);18 Serial.print(dht_dat[0], DEC);19 Serial.print(&quot;.&quot;);20 Serial.print(dht_dat[1], DEC);21 Serial.print(&quot;%  &quot;);22 Serial.print(&quot;temperature = &quot;);23 Serial.print(dht_dat[2], DEC);24 Serial.print(&quot;.&quot;);25 Serial.print(dht_dat[3], DEC);26 Serial.println(&quot;C  &quot;);27        break;28     case 1:29        Serial.println(&quot;Error 1: DHT start condition 1 not met.&quot;);30        break;31     case 2:32        Serial.println(&quot;Error 2: DHT start condition 2 not met.&quot;);33        break;34     case 3:35        Serial.println(&quot;Error 3: DHT checksum error.&quot;);36        break;37     default:38        Serial.println(&quot;Error: Unrecognized code encountered.&quot;);39        break;40      }41  delay(800);42}4344void InitDHT(){45   pinMode(dht_dpin,OUTPUT);46        digitalWrite(dht_dpin,HIGH);47}4849void ReadDHT(){50bGlobalErr=0;51byte dht_in;52byte i;53digitalWrite(dht_dpin,LOW);54delay(20);5556digitalWrite(dht_dpin,HIGH);57delayMicroseconds(40);58pinMode(dht_dpin,INPUT);59//delayMicroseconds(40);60dht_in=digitalRead(dht_dpin);6162if(dht_in){63   bGlobalErr=1;64   return;65   }66delayMicroseconds(80);67dht_in=digitalRead(dht_dpin);6869if(!dht_in){70   bGlobalErr=2;71   return;72   }73delayMicroseconds(80);74for (i=0; i&lt;5; i++)75   dht_dat[i] = read_dht_dat();76pinMode(dht_dpin,OUTPUT);77digitalWrite(dht_dpin,HIGH);78byte dht_check_sum =79       dht_dat[0]+dht_dat[1]+dht_dat[2]+dht_dat[3];80if(dht_dat[4]!= dht_check_sum)81   {bGlobalErr=3;}82};8384byte read_dht_dat(){85  byte i = 0;86  byte result=0;87  for(i=0; i&lt; 8; i++){88      while(digitalRead(dht_dpin)==LOW);89      delayMicroseconds(30);90      if (digitalRead(dht_dpin)==HIGH)91     result |=(1&lt;&lt;(7-i));92    while (digitalRead(dht_dpin)==HIGH);93    }94  return result;95}969798</span>
 </code></pre></div></td></tr></table></div></p>
-<p><img alt="hardware-arduino-temp" src="https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/hardware-arduino-temp.png" /></p>
+<p><img alt="hardware-arduino-temp" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/hardware-arduino-temp.png" /></p>
 
 
 
@@ -4309,7 +4312,7 @@ Arduino示例代码：
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 31, 2025 14:11:07"><span class="timeago" datetime="2025-03-31T14:11:07+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 31, 2025 14:11:07">2025-03-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 5, 2025 04:46:23"><span class="timeago" datetime="2025-04-05T04:46:23+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 5, 2025 04:46:23">2025-04-05</span>
   </span>
 
     
@@ -4319,7 +4322,7 @@ Arduino示例代码：
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 31, 2025 14:11:07"><span class="timeago" datetime="2025-03-31T14:11:07+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 31, 2025 14:11:07">2025-03-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 5, 2025 04:46:23"><span class="timeago" datetime="2025-04-05T04:46:23+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 5, 2025 04:46:23">2025-04-05</span>
   </span>
 
     
