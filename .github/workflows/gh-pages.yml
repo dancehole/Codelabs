@@ -5,10 +5,12 @@ on:
       - master  # 监听 master 分支的推送事件
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latfetchst
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2  # 检出代码
+      uses: actions/checkout@v4  # 检出代码
+      with:
+        fetch-depth: 0
     - name: Set up Python
       uses: actions/setup-python@v2
       with:

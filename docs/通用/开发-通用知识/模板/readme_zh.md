@@ -169,7 +169,7 @@ See the [contributing guide](CONTRIBUTING.md)
 
 |                           微信支持                           |                 作者bilibili频道/公众号/微信                 |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-template-wechat1.png" alt="image-20240201235337475"  /> | <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-template-wechat2.png" alt="image-20240201235414474" /> |
+| <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-template-wechat1.png" alt="image-20240201235337475" width="200px" /> | <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-template-wechat2.png" alt="image-20240201235414474" width="200px" /> |
 
 <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-template-star.png"/>
 

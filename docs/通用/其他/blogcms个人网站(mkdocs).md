@@ -152,3 +152,54 @@ jobs:
 > 工作流自动化使用
 
 [node.js - web前端常用的五种方式搭建本地静态html页面服务器 - 风雨过后见彩虹 - SegmentFault 思否](https://segmentfault.com/a/1190000039744899)
+
+
+
+
+
+## picGo+github图床，使用jsdelivr进行cdn加速
+
+博客里，图床图片链接为：
+
+- `https://raw.githubusercontent.com/dancehole/image/main/danceholeLabs/common-markdown-alpha.png`
+- 国内无法访问（dns错误，可以通过修改dns）
+
+使用cdn加速：
+
+- https://cdn.jsdelivr.net/gh/dancehole/image@main/danceholeLabs/common-markdown-alpha.png
+
+- 访问可能很慢，但是最终会显示
+
+
+
+
+
+## 自定义链接格式
+
+设置：[配置手册 | PicGo](https://picgo.github.io/PicGo-Doc/zh/guide/config.html#自定义链接格式)
+
+格式自定义为
+
+
+
+
+
+## 自定义链接格式
+
+```
+<img src="$url"      href="$url"      alt="图片加载失败，请使用代理访问（图片托管在github上）"  height="400px"	      loading="lazy"     title="$fileName"	      style="border-radius: 8px;"      decoding="async">
+```
+
+
+
+
+
+
+
+参考[使用Github+picGo搭建图床，保姆级教程来了 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/489236769)
+
+
+
+自定义域名（jsdeliver加速）
+https://cdn.jsdelivr.net/gh/{github用户名}/{仓库名}@{分支名}/
+

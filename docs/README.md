@@ -57,14 +57,14 @@ comments: true
 
 
 
-<div class="profile-container" style="
+<div style="
+	align-items:center;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
-    width: 100%;
     transform: scale(0.9);
     transition: transform 0.3s;">
     <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/icon-1080x1080.ico" 
@@ -108,6 +108,7 @@ comments: true
         </a>
     </div>
 </div>
+
 dancehole.cn路由：
 
 | 项目名               | 项目描述  | 项目链接                           |
@@ -214,4 +215,4 @@ gitee：
 >
 > 2022/03 仓库建立
 >
-> 2025/03 仓库重构，删除敏感信息，使用ci+github Actions
+> 2025/03 仓库重构，删除敏感信息，使用ci+github 

@@ -7,8 +7,8 @@
 
 举例：使用markdown标签的图片。假如图片是竖屏类的，很不好看
 
-<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-2024-aomen2"/>
-<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2"/>
+<img height="300px" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-2024-aomen2"/>
+<img height="300px" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2"/>
 
 
 方法1：使用表格约束
@@ -78,6 +78,14 @@
 </script>
 ```
 
+
+
+### 图片的浮动布局
+
+> 不推荐使用，因为移动端适配不好
+
+
+
 <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2"
      style="max-width: 100%;
 			filter: grayscale(100%)blur(1px);
@@ -106,9 +114,29 @@ float
 
 
 
+```html
+<img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2"
+     style="max-width: 100%;
+			filter: grayscale(100%)blur(1px);
+            max-height: 300px;
+            border-radius: 18px;
+			float: left; margin-right: 100px;margin-left:30px;
+            box-shadow: 0 5px 10px rgba(255,0,0,0.4);
+            transition: transform 0.3s;"
+			title="这是一个图片"
+	onmouseover="this.style.transform='scale(1.02)'"
+    onmouseout="this.style.transform='scale(1)'">
+```
 
 
-**实现放大缩小**
+
+### 图片嵌入js代码
+
+> **实现放大缩小**
+
+
+
+
 
 
 
@@ -116,23 +144,30 @@ float
   onclick="document.getElementById('fullscreen-image').style.display='block';document.getElementById('test1').style.display='none';"
   style="cursor: zoom-in;"/>
 
-<!-- 隐藏的大图容器,点击后放大 -->
-
 <div id="fullscreen-image" style="display: none;">
-  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2" style="width: 100%;cursor: zoom-out;" onclick="document.getElementById('fullscreen-image').style.display='none';document.getElementById('test1').style.display='block'">
+  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2" style="height: 500px;cursor: zoom-out;" onclick="document.getElementById('fullscreen-image').style.display='none';document.getElementById('test1').style.display='block'">
 </div>
 
 
+```html
+<img id="test1" width="100px" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2" 
+  onclick="document.getElementById('fullscreen-image').style.display='block';document.getElementById('test1').style.display='none';"
+  style="cursor: zoom-in;"/>
+      
+<div id="fullscreen-image" style="display: none;">
+  <img src="https://cdn.jsdelivr.net/gh/dancehole/image@main/notebooks/travel-zhuhai-2" style="height: 500px;cursor: zoom-out;" onclick="document.getElementById('fullscreen-image').style.display='none';document.getElementById('test1').style.display='block'">
+</div>
+```
 
 
 
-## 文字处理
+
+
+## 文字处理-居中
 
 
 
-有时候我们希望有图片的描述/表格的标题，希望有一行居中图片，可以用
-
-
+>  有时候我们希望有图片的描述/表格的标题，希望有一行居中图片，可以用
 
 ```html
 <center>center标签，HTML4 已废弃该标签，但在现代浏览器仍有效。</center>
@@ -170,5 +205,15 @@ float
 </div>
 
 
+## markdown内部链接：
 
-## 其他
+创建引用：
+
+`<a id="title"></a>`
+
+跳转引用：
+
+`[click here](#title)`
+
+
+

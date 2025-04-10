@@ -63,7 +63,7 @@ plugins:  # 插件
       locale: en
       fallback_to_build_date: false
       enable_creation_date: true
-      enabled: true
+      enabled: true # 如果要禁用插件，请改为false
       strict: true
 
 
